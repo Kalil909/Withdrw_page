@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>طلب سحب - نموذج آمن (Demo)</title>
+  <style>
+    :root{ --bg:#f7fafc; --card:#fff; --accent:#1e90ff; --muted:#6b7280 }
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, Arial, sans-serif;background:var(--bg);margin:0;color:#111}
+    .container{max-width:480px;margin:28px auto;padding:20px}
+    .card{background:var(--card);border-radius:12px;padding:22px;box-shadow:0 6px 18px rgba(17,24,39,0.06)}
+    .hero{display:flex;gap:14px;align-items:center}
+    .hero img{width:84px;height:84px;border-radius:8px;object-fit:cover}
+    h1{font-size:18px;margin:0 0 6px}
+    p.lead{margin:0;color:var(--muted);font-size:14px}
+    form{margin-top:18px}
+    label{display:block;font-size:13px;margin-bottom:6px;color:#111}
+    input[type=text], input[type=password]{width:100%;padding:12px 14px;border:1px solid #e6e9ef;border-radius:10px;font-size:15px}
+    .note{font-size:13px;color:var(--muted);margin-top:8px}
+    .actions{margin-top:18px;display:flex;gap:10px}
+    button{flex:1;padding:12px;border-radius:10px;border:0;font-weight:600;background:var(--accent);color:#fff;cursor:pointer}
+    button[disabled]{opacity:0.6;cursor:not-allowed}
+    .secondary{background:transparent;border:1px solid #e6e9ef;color:#111}
+    .toast{position:fixed;left:50%;transform:translateX(-50%);bottom:26px;background:#111;color:#fff;padding:10px 14px;border-radius:8px;display:none}
+    .warning{background:#fff3cd;border:1px solid #ffe8a1;padding:10px;border-radius:8px;margin-top:12px;color:#664d03}
+    @media (max-width:520px){.container{margin:12px}} 
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card" role="main">
+      <div class="hero">
+        <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="logo">
+        <div>
+          <h1>طلب سحب — حسابك</h1>
+          <p class="lead">ادخل معلومات محفظتك و رمز التفويض لبدء عملية السحب (نسخة تجريبية).</p>
+        </div>
+      </div
